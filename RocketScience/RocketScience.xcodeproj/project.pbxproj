@@ -11,6 +11,9 @@
 		185A29442A0D0B49009C2706 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A29432A0D0B49009C2706 /* ContentView.swift */; };
 		185A29462A0D0B4B009C2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A29452A0D0B4B009C2706 /* Assets.xcassets */; };
 		185A29492A0D0B4B009C2706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A29482A0D0B4B009C2706 /* Preview Assets.xcassets */; };
+		185A29512A0D0D4A009C2706 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 185A29502A0D0D4A009C2706 /* Apollo */; };
+		185A29532A0D311A009C2706 /* GraphQL in Resources */ = {isa = PBXBuildFile; fileRef = 185A29522A0D311A009C2706 /* GraphQL */; };
+		188D5FE22A0D4BB300512CAE /* SpaceXAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 188D5FE12A0D4BB300512CAE /* SpaceXAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		185A29432A0D0B49009C2706 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		185A29452A0D0B4B009C2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185A29482A0D0B4B009C2706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		185A29522A0D311A009C2706 /* GraphQL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphQL; sourceTree = SOURCE_ROOT; };
+		188D5FE02A0D4BA500512CAE /* SpaceXAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SpaceXAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A29512A0D0D4A009C2706 /* Apollo in Frameworks */,
+				188D5FE22A0D4BB300512CAE /* SpaceXAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +42,10 @@
 		185A29352A0D0B49009C2706 = {
 			isa = PBXGroup;
 			children = (
+				185A29542A0D40E1009C2706 /* Packages */,
 				185A29402A0D0B49009C2706 /* RocketScience */,
 				185A293F2A0D0B49009C2706 /* Products */,
+				1870376F2A0D44170009F900 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +60,7 @@
 		185A29402A0D0B49009C2706 /* RocketScience */ = {
 			isa = PBXGroup;
 			children = (
+				185A29522A0D311A009C2706 /* GraphQL */,
 				185A29412A0D0B49009C2706 /* RocketScienceApp.swift */,
 				185A29432A0D0B49009C2706 /* ContentView.swift */,
 				185A29452A0D0B4B009C2706 /* Assets.xcassets */,
@@ -65,6 +75,21 @@
 				185A29482A0D0B4B009C2706 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		185A29542A0D40E1009C2706 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				188D5FE02A0D4BA500512CAE /* SpaceXAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1870376F2A0D44170009F900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +108,10 @@
 			dependencies = (
 			);
 			name = RocketScience;
+			packageProductDependencies = (
+				185A29502A0D0D4A009C2706 /* Apollo */,
+				188D5FE12A0D4BB300512CAE /* SpaceXAPI */,
+			);
 			productName = RocketScience;
 			productReference = 185A293E2A0D0B49009C2706 /* RocketScience.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 185A29352A0D0B49009C2706;
+			packageReferences = (
+				185A294F2A0D0D4A009C2706 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 185A293F2A0D0B49009C2706 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A29532A0D311A009C2706 /* GraphQL in Resources */,
 				185A29492A0D0B4B009C2706 /* Preview Assets.xcassets in Resources */,
 				185A29462A0D0B4B009C2706 /* Assets.xcassets in Resources */,
 			);
@@ -339,6 +372,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		185A294F2A0D0D4A009C2706 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		185A29502A0D0D4A009C2706 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 185A294F2A0D0D4A009C2706 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		188D5FE12A0D4BB300512CAE /* SpaceXAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpaceXAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 185A29362A0D0B49009C2706 /* Project object */;
 }

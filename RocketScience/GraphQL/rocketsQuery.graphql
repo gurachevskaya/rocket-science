@@ -1,0 +1,14 @@
+query RocketsQuery {
+  rockets {
+    id
+    name
+    height {
+      meters
+    }
+    cost_per_launch
+    active
+    mass {
+      kg
+    }
+  }
+}

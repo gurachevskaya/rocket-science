@@ -1,6 +1,7 @@
 //
 
 import SwiftUI
+import SpaceXAPI
 
 @main
 struct RocketScienceApp: App {

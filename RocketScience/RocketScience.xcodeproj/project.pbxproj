@@ -18,6 +18,7 @@
 		188D5FE62A0D4EA700512CAE /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FE52A0D4EA700512CAE /* RocketsListViewModel.swift */; };
 		188D5FEA2A0D4F4B00512CAE /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FE92A0D4F4B00512CAE /* RocketModel.swift */; };
 		188D5FEC2A0E4A5300512CAE /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FEB2A0E4A5300512CAE /* RocketView.swift */; };
+		18CD0CC72A0E8E1000FF8C24 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CC62A0E8E1000FF8C24 /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		188D5FE52A0D4EA700512CAE /* RocketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewModel.swift; sourceTree = "<group>"; };
 		188D5FE92A0D4F4B00512CAE /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
 		188D5FEB2A0E4A5300512CAE /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RocketView.swift; path = ../../../../../../RocketView.swift; sourceTree = "<group>"; };
+		18CD0CC62A0E8E1000FF8C24 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertItem.swift; path = ../../../../../../AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				188D5FE92A0D4F4B00512CAE /* RocketModel.swift */,
+				18CD0CC62A0E8E1000FF8C24 /* AlertItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CD0CC72A0E8E1000FF8C24 /* AlertItem.swift in Sources */,
 				188D5FEC2A0E4A5300512CAE /* RocketView.swift in Sources */,
 				188D5FE62A0D4EA700512CAE /* RocketsListViewModel.swift in Sources */,
 				188D5FEA2A0D4F4B00512CAE /* RocketModel.swift in Sources */,

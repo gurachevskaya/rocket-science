@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		185A29422A0D0B49009C2706 /* RocketScienceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A29412A0D0B49009C2706 /* RocketScienceApp.swift */; };
-		185A29442A0D0B49009C2706 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A29432A0D0B49009C2706 /* ContentView.swift */; };
+		185A29442A0D0B49009C2706 /* RocketsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A29432A0D0B49009C2706 /* RocketsListView.swift */; };
 		185A29462A0D0B4B009C2706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A29452A0D0B4B009C2706 /* Assets.xcassets */; };
 		185A29492A0D0B4B009C2706 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A29482A0D0B4B009C2706 /* Preview Assets.xcassets */; };
 		185A29512A0D0D4A009C2706 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 185A29502A0D0D4A009C2706 /* Apollo */; };
 		185A29532A0D311A009C2706 /* GraphQL in Resources */ = {isa = PBXBuildFile; fileRef = 185A29522A0D311A009C2706 /* GraphQL */; };
 		188D5FE22A0D4BB300512CAE /* SpaceXAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 188D5FE12A0D4BB300512CAE /* SpaceXAPI */; };
 		188D5FE42A0D4C4B00512CAE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FE32A0D4C4B00512CAE /* NetworkService.swift */; };
+		188D5FE62A0D4EA700512CAE /* RocketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FE52A0D4EA700512CAE /* RocketsListViewModel.swift */; };
+		188D5FEA2A0D4F4B00512CAE /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FE92A0D4F4B00512CAE /* RocketModel.swift */; };
+		188D5FEC2A0E4A5300512CAE /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D5FEB2A0E4A5300512CAE /* RocketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		185A293E2A0D0B49009C2706 /* RocketScience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketScience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185A29412A0D0B49009C2706 /* RocketScienceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketScienceApp.swift; sourceTree = "<group>"; };
-		185A29432A0D0B49009C2706 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		185A29432A0D0B49009C2706 /* RocketsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListView.swift; sourceTree = "<group>"; };
 		185A29452A0D0B4B009C2706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185A29482A0D0B4B009C2706 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		185A29522A0D311A009C2706 /* GraphQL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GraphQL; sourceTree = SOURCE_ROOT; };
 		188D5FE02A0D4BA500512CAE /* SpaceXAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SpaceXAPI; sourceTree = "<group>"; };
 		188D5FE32A0D4C4B00512CAE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		188D5FE52A0D4EA700512CAE /* RocketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsListViewModel.swift; sourceTree = "<group>"; };
+		188D5FE92A0D4F4B00512CAE /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
+		188D5FEB2A0E4A5300512CAE /* RocketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RocketView.swift; path = ../../../../../../RocketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,10 @@
 		185A29402A0D0B49009C2706 /* RocketScience */ = {
 			isa = PBXGroup;
 			children = (
+				188D5FE82A0D4F4200512CAE /* Models */,
 				185A29522A0D311A009C2706 /* GraphQL */,
 				185A29412A0D0B49009C2706 /* RocketScienceApp.swift */,
-				185A29432A0D0B49009C2706 /* ContentView.swift */,
+				188D5FE72A0D4EB000512CAE /* RocketsList */,
 				185A29452A0D0B4B009C2706 /* Assets.xcassets */,
 				185A29472A0D0B4B009C2706 /* Preview Content */,
 				188D5FE32A0D4C4B00512CAE /* NetworkService.swift */,
@@ -93,6 +100,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188D5FE72A0D4EB000512CAE /* RocketsList */ = {
+			isa = PBXGroup;
+			children = (
+				185A29432A0D0B49009C2706 /* RocketsListView.swift */,
+				188D5FE52A0D4EA700512CAE /* RocketsListViewModel.swift */,
+				188D5FEB2A0E4A5300512CAE /* RocketView.swift */,
+			);
+			path = RocketsList;
+			sourceTree = "<group>";
+		};
+		188D5FE82A0D4F4200512CAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				188D5FE92A0D4F4B00512CAE /* RocketModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185A29442A0D0B49009C2706 /* ContentView.swift in Sources */,
+				188D5FEC2A0E4A5300512CAE /* RocketView.swift in Sources */,
+				188D5FE62A0D4EA700512CAE /* RocketsListViewModel.swift in Sources */,
+				188D5FEA2A0D4F4B00512CAE /* RocketModel.swift in Sources */,
+				185A29442A0D0B49009C2706 /* RocketsListView.swift in Sources */,
 				188D5FE42A0D4C4B00512CAE /* NetworkService.swift in Sources */,
 				185A29422A0D0B49009C2706 /* RocketScienceApp.swift in Sources */,
 			);

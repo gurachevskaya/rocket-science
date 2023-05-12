@@ -7,7 +7,7 @@ import SpaceXAPI
 struct RocketScienceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RocketsListView(viewModel: RocketsListViewModel())
         }
     }
 }

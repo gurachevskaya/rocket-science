@@ -2,7 +2,7 @@ import Foundation
 import SpaceXAPI
 
 final class RocketsListViewModel: ObservableObject {
-    @Published var model: [RocketsQuery.Data.Rocket] = []
+    @Published var model: [RocketModel] = []
     @Published var isLoading: Bool = false
     @Published var alertItem: AlertItem?
 

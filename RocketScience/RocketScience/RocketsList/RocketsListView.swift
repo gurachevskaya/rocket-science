@@ -4,28 +4,35 @@ struct RocketsListView: View {
     @StateObject var viewModel: RocketsListViewModel
 
     var body: some View {
-        ZStack {
-            VStack {
-                List {
-                    ForEach(viewModel.model, id: \.id) { rocket in
-                        RocketView(rocket: rocket)
-                            .padding([.top, .bottom])
+        NavigationStack {
+            ZStack {
+                VStack {
+                    List {
+                        ForEach(viewModel.model, id: \.id) { rocket in
+                            NavigationLink(value: RocketsRoute.launches(rocket)) {
+                                RocketView(rocket: rocket)
+                                    .padding([.top, .bottom])
+                            }
+                        }
                     }
+                    Spacer()
                 }
-                Spacer()
+                
+                if viewModel.isLoading {
+                    ProgressView().scaleEffect(2)
+                }
             }
             .onAppear {
                 viewModel.fetchRockets()
             }
-            
-            if viewModel.isLoading {
-                ProgressView().scaleEffect(2)
+            .navigationDestination(for: RocketsRoute.self) { route in
+                route.view()
             }
-        }
-        .alert(item: $viewModel.alertItem) { item in
-            Alert(title: item.title,
-                  message: item.message,
-                  dismissButton: item.dismissButton)
+            .alert(item: $viewModel.alertItem) { item in
+                Alert(title: item.title,
+                      message: item.message,
+                      dismissButton: item.dismissButton)
+            }
         }
     }
 }

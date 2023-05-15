@@ -11,18 +11,15 @@ public class LaunchesQuery: GraphQLQuery {
       query LaunchesQuery($upcomingFind: LaunchFind, $pastFind: LaunchFind) {
         launchesUpcoming(find: $upcomingFind) {
           __typename
-          id
-          mission_name
-          launch_date_utc
+          ...LaunchFragment
         }
         launchesPast(find: $pastFind) {
           __typename
-          id
-          mission_name
-          launch_date_utc
+          ...LaunchFragment
         }
       }
-      """#
+      """#,
+      fragments: [LaunchFragment.self]
     ))
 
   public var upcomingFind: GraphQLNullable<LaunchFind>
@@ -64,14 +61,19 @@ public class LaunchesQuery: GraphQLQuery {
       public static var __parentType: ApolloAPI.ParentType { SpaceXAPI.Objects.Launch }
       public static var __selections: [ApolloAPI.Selection] { [
         .field("__typename", String.self),
-        .field("id", SpaceXAPI.ID?.self),
-        .field("mission_name", String?.self),
-        .field("launch_date_utc", SpaceXAPI.Date?.self),
+        .fragment(LaunchFragment.self),
       ] }
 
       public var id: SpaceXAPI.ID? { __data["id"] }
       public var mission_name: String? { __data["mission_name"] }
       public var launch_date_utc: SpaceXAPI.Date? { __data["launch_date_utc"] }
+
+      public struct Fragments: FragmentContainer {
+        public let __data: DataDict
+        public init(_dataDict: DataDict) { __data = _dataDict }
+
+        public var launchFragment: LaunchFragment { _toFragment() }
+      }
     }
 
     /// LaunchesPast
@@ -84,14 +86,19 @@ public class LaunchesQuery: GraphQLQuery {
       public static var __parentType: ApolloAPI.ParentType { SpaceXAPI.Objects.Launch }
       public static var __selections: [ApolloAPI.Selection] { [
         .field("__typename", String.self),
-        .field("id", SpaceXAPI.ID?.self),
-        .field("mission_name", String?.self),
-        .field("launch_date_utc", SpaceXAPI.Date?.self),
+        .fragment(LaunchFragment.self),
       ] }
 
       public var id: SpaceXAPI.ID? { __data["id"] }
       public var mission_name: String? { __data["mission_name"] }
       public var launch_date_utc: SpaceXAPI.Date? { __data["launch_date_utc"] }
+
+      public struct Fragments: FragmentContainer {
+        public let __data: DataDict
+        public init(_dataDict: DataDict) { __data = _dataDict }
+
+        public var launchFragment: LaunchFragment { _toFragment() }
+      }
     }
   }
 }

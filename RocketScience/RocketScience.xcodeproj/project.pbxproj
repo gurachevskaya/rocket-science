@@ -22,6 +22,7 @@
 		18A17C342A122EAB0049DAC9 /* LaunchesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A17C332A122EAB0049DAC9 /* LaunchesListViewModel.swift */; };
 		18A17C362A122F980049DAC9 /* RocketsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A17C352A122F980049DAC9 /* RocketsRoute.swift */; };
 		18A17C382A12305A0049DAC9 /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A17C372A12305A0049DAC9 /* NavigationRoute.swift */; };
+		18A17C3C2A1242B70049DAC9 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A17C3B2A1242B70049DAC9 /* LaunchView.swift */; };
 		18CD0CC72A0E8E1000FF8C24 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0CC62A0E8E1000FF8C24 /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		18A17C332A122EAB0049DAC9 /* LaunchesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchesListViewModel.swift; path = ../../../../../../LaunchesListViewModel.swift; sourceTree = "<group>"; };
 		18A17C352A122F980049DAC9 /* RocketsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RocketsRoute.swift; path = ../../../../../../RocketsRoute.swift; sourceTree = "<group>"; };
 		18A17C372A12305A0049DAC9 /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationRoute.swift; path = ../../../../../../NavigationRoute.swift; sourceTree = "<group>"; };
+		18A17C3B2A1242B70049DAC9 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchView.swift; path = ../../../../../../LaunchView.swift; sourceTree = "<group>"; };
 		18CD0CC62A0E8E1000FF8C24 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertItem.swift; path = ../../../../../../AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 			children = (
 				18A17C312A122E990049DAC9 /* LaunchesListView.swift */,
 				18A17C332A122EAB0049DAC9 /* LaunchesListViewModel.swift */,
+				18A17C3B2A1242B70049DAC9 /* LaunchView.swift */,
 			);
 			path = LaunchesList;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A17C382A12305A0049DAC9 /* NavigationRoute.swift in Sources */,
+				18A17C3C2A1242B70049DAC9 /* LaunchView.swift in Sources */,
 				18CD0CC72A0E8E1000FF8C24 /* AlertItem.swift in Sources */,
 				18A17C362A122F980049DAC9 /* RocketsRoute.swift in Sources */,
 				188D5FEC2A0E4A5300512CAE /* RocketView.swift in Sources */,
